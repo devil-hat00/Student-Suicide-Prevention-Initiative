@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Support Survey</title>
+  <link rel="stylesheet" href="CSS/survey-styles.css">
+</head>
+<body>
+  <div class="container">
+    <form id="survey-form">
+      <h2>Student Support Survey</h2>
+      
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="contact">Contact Number</label>
+      <input type="text" id="contact" name="contact" required>
+      
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age" required>
+      
+      <label for="gender">Gender</label>
+      <select id="gender" name="gender" required>
+        <option value="" disabled selected>Select your gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+        <option value="prefer-not-to-say">Prefer not to say</option>
+      </select>
+      
+      <label for="academic-stress">How often do you feel overwhelmed by academic stress?</label>
+      <select id="academic-stress" name="academic-stress" required>
+        <option value="" disabled selected>Select an option</option>
+        <option value="never">Never</option>
+        <option value="rarely">Rarely</option>
+        <option value="sometimes">Sometimes</option>
+        <option value="often">Often</option>
+        <option value="always">Always</option>
+      </select>
+      
+      <label for="support-system">Do you feel that you have a strong support system?</label>
+      <select id="support-system" name="support-system" required>
+        <option value="" disabled selected>Select an option</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+        <option value="unsure">Unsure</option>
+      </select>
+      
+      <label for="coping-mechanisms">Which coping mechanisms do you use to manage stress? (Select all that apply)</label>
+      <div>
+        <input type="checkbox" id="exercise" name="coping-mechanisms" value="exercise">
+        <label for="exercise">Exercise</label><br>
+        <input type="checkbox" id="meditation" name="coping-mechanisms" value="meditation">
+        <label for="meditation">Meditation</label><br>
+        <input type="checkbox" id="talking" name="coping-mechanisms" value="talking-to-someone">
+        <label for="talking">Talking to someone</label><br>
+        <input type="checkbox" id="hobbies" name="coping-mechanisms" value="engaging-in-hobbies">
+        <label for="hobbies">Engaging in hobbies</label><br>
+        <input type="checkbox" id="other" name="coping-mechanisms" value="other">
+        <label for="other">Other</label>
+      </div>
+      
+      <label for="mental-health-resources">Are you aware of mental health resources available at your institution?</label>
+      <select id="mental-health-resources" name="mental-health-resources" required>
+        <option value="" disabled selected>Select an option</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+      
+      <label for="seeking-help">Have you ever sought professional help for mental health issues?</label>
+      <select id="seeking-help" name="seeking-help" required>
+        <option value="" disabled selected>Select an option</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+      
+      <label for="barriers">What barriers prevent you from seeking help? (Select all that apply)</label>
+      <div>
+        <input type="checkbox" id="stigma" name="barriers" value="stigma">
+        <label for="stigma">Stigma</label><br>
+        <input type="checkbox" id="cost" name="barriers" value="cost">
+        <label for="cost">Cost</label><br>
+        <input type="checkbox" id="time" name="barriers" value="time">
+        <label for="time">Lack of time</label><br>
+        <input type="checkbox" id="access" name="barriers" value="access">
+        <label for="access">Access to resources</label><br>
+        <input type="checkbox" id="trust" name="barriers" value="trust">
+        <label for="trust">Trust in professionals</label><br>
+        <input type="checkbox" id="other-barrier" name="barriers" value="other">
+        <label for="other-barrier">Other</label>
+      </div>
+      
+      <label for="support-needed">What type of support do you feel would be most helpful? (Select all that apply)</label>
+      <div>
+        <input type="checkbox" id="counseling" name="support-needed" value="counseling">
+        <label for="counseling">Counseling</label><br>
+        <input type="checkbox" id="peer-support" name="support-needed" value="peer-support">
+        <label for="peer-support">Peer support</label><br>
+        <input type="checkbox" id="workshops" name="support-needed" value="workshops">
+        <label for="workshops">Workshops</label><br>
+        <input type="checkbox" id="online-resources" name="support-needed" value="online-resources">
+        <label for="online-resources">Online resources</label><br>
+        <input type="checkbox" id="other-support" name="support-needed" value="other">
+        <label for="other-support">Other</label>
+      </div>
+      
+      <label for="times-of-stress">When do you feel the most stress? (Select all that apply)</label>
+      <div>
+        <input type="checkbox" id="exams" name="times-of-stress" value="exams">
+        <label for="exams">During exams</label><br>
+        <input type="checkbox" id="deadlines" name="times-of-stress" value="deadlines">
+        <label for="deadlines">Meeting deadlines</label><br>
+        <input type="checkbox" id="social-situations" name="times-of-stress" value="social-situations">
+        <label for="social-situations">Social situations</label><br>
+        <input type="checkbox" id="family" name="times-of-stress" value="family-responsibilities">
+        <label for="family">Family responsibilities</label><br>
+        <input type="checkbox" id="financial" name="times-of-stress" value="financial">
+        <label for="financial">Financial concerns</label><br>
+        <input type="checkbox" id="other-times" name="times-of-stress" value="other">
+        <label for="other-times">Other</label>
+      </div>
+      
+      <label for="mental-health-status">How would you rate your current mental health status?</label>
+      <select id="mental-health-status" name="mental-health-status" required>
+        <option value="" disabled selected>Select an option</option>
+        <option value="excellent">Excellent</option>
+        <option value="good">Good</option>
+        <option value="fair">Fair</option>
+        <option value="poor">Poor</option>
+      </select>
+      
+      <label for="improvement">What could your institution do to better support mental health?</label>
+      <textarea id="improvement" name="improvement" rows="4"></textarea>
+      
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="Javascript/survey-scripts.js"></script>
+
+</body>
+</html>

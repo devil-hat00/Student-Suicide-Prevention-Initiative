@@ -1,0 +1,6 @@
+Here :
+index.html , styles.css , scripts.js  --- basic code 
+login.html , signup.html , register-styles.css , register-scripts.js --- code for the login page accessed by login and signup button
+survey.html , survey-styles.css , survey-scripts.js  --- code for the survey form which is accessed by the reach me out button on the home page
+chatbot.html , chatbot-styles.css , chatbot-scripts.js  --- code for the ai chat bot which is accessed by the talk to someone button on the home page
+resources.html , resources-styles.css , resources-scripts.js  --- code for the resurces page about us which is accessed by the Discover resoursec on the resources page

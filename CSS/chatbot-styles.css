@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Chat Container */
+.chat-container {
+  width: 100%;
+  max-width: 600px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Chat Header */
+.chat-header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Chat Body */
+.chat-body {
+  flex-grow: 1;
+  padding: 15px;
+  overflow-y: auto;
+  max-height: 400px;
+  background-color: #f9f9f9;
+}
+
+/* Chat Message */
+.bot-message, .user-message {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.bot-message p, .user-message p {
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  max-width: 80%;
+}
+
+.bot-message p {
+  background-color: #e1e1e1;
+  margin-right: auto;
+}
+
+.user-message p {
+  background-color: #4CAF50;
+  color: white;
+  margin-left: auto;
+}
+
+/* Chat Footer */
+.chat-footer {
+  display: flex;
+  border-top: 1px solid #ddd;
+  padding: 10px;
+  background-color: #ffffff;
+}
+
+.chat-footer input {
+  flex-grow: 1;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.chat-footer button {
+  padding: 15px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.chat-footer button:hover {
+  background-color: #45a049;
+}
+
+/* Scrollbar Styles */
+.chat-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat-body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.chat-body::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
